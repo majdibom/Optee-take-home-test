@@ -5,3 +5,12 @@ parser: babel-eslint
 extends:
   - eslint:recommended
   - plugin:prettier/recommended
+  - prettier
+
+rules:
+  linebreak-style: ["error", "unix"]
+  quotes: ["error", "single"]
+  semi: ["error", "always"]
+  no-console: "warn"
+  no-unused-vars: ["warn"]
+  indent: "off"
