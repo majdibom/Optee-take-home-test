@@ -37,6 +37,9 @@ export class Pharmacy {
       case 'Fervex':
         this.updateFervex(drug);
         break;
+      case 'Dafalgan':
+        this.decreaseBenefit(drug, 2);
+        break;
       default:
         this.decreaseBenefit(drug, 1);
     }
@@ -59,6 +62,9 @@ export class Pharmacy {
         break;
       case 'Fervex':
         drug.benefit = 0;
+        break;
+      case 'Dafalgan':
+        this.decreaseBenefit(drug, 2);
         break;
       default:
         this.decreaseBenefit(drug, 1);
