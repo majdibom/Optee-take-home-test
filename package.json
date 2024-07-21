@@ -8,15 +8,20 @@
     "node": ">=12.x"
   },
   "scripts": {
+    "build": "tsc",
     "lint": "eslint .",
     "test": "jest",
-    "start": "babel-node index.js"
+    "start": "node dist/index.js"
   },
   "devDependencies": {
     "@babel/cli": "^7.1.0",
-    "@babel/core": "^7.1.0",
+    "@babel/core": "^7.24.9",
     "@babel/node": "^7.0.0",
-    "@babel/preset-env": "^7.1.0",
+    "@babel/plugin-transform-runtime": "^7.24.7",
+    "@babel/preset-env": "^7.24.8",
+    "@babel/preset-typescript": "^7.24.7",
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.14.11",
     "babel-core": "^7.0.0-bridge.0",
     "babel-eslint": "^9.0.0",
     "babel-jest": "^23.6.0",
@@ -25,6 +30,7 @@
     "eslint-plugin-prettier": "^2.6.2",
     "jest": "24.8.0",
     "prettier": "^1.14.3",
-    "regenerator-runtime": "^0.12.1"
+    "regenerator-runtime": "^0.12.1",
+    "typescript": "^5.5.3"
   }
 }
